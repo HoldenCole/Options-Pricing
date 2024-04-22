@@ -1,0 +1,22 @@
+**How the Black-Scholes Model Works:**
+
+The Black-Scholes model assumes that the price of the underlying asset follows a log-normal distribution, meaning that the logarithm of its price is normally distributed, implying that the asset's price can be modeled as a continuous random walk. The model also assumes no arbitrage opportunities, which means that it's not possible to make a risk-free profit.
+
+**Key Inputs:**
+1. The current price of the underlying asset (S): This is the spot price of the stock or other security on which the option is based.
+2. The strike price of the option (K): This is the price at which the option holder can buy (call) or sell (put) the underlying asset.
+3. The time to expiration (T): This is the time remaining until the option's expiration date, typically expressed in years. 
+4. The risk-free interest rate (r): This is the theoretical return of a risk-free investment over the option's life. U.S. Treasury securities are often used as the benchmark for the risk-free rate. 
+5. The volatility of the underlying asset (σ, sigma): This is the most critical and sensitive input to the model. It represents the standard deviation of the underlying asset's returns, reflecting how much the price is expected to fluctuate during a given period of time.
+
+**The Outcome:**
+Using these inputs, the Black-Scholes model calculates the option's value, which comprises intrinsic value (how much in-the-money the option is) and time value (the potential for further gains). For a call option, the Black-Scholes formula gives an estimate of the price you should be willing to pay today for the possibility of benefiting from the underlying asset's price increase without actually buying the asset. For a put option, it estimates the price for the potential to sell the underlying asset at the strike price, even if the market falls.
+
+**Variables and Their Effects:**
+
+Current Price (S): A higher current price compared to the strike price increases the value of a call option (since it's more likely to end up in-the-money) and decreases the value of a put option.
+Strike Price (K): A higher strike price makes a call option less valuable (since it's more expensive to buy the asset) and a put option more valuable (since you can sell the asset at a higher price).
+Time to Expiration (T): More time until expiration generally increases the value of both call and put options because there is more time for the underlying asset to move in a favorable direction.
+Risk-Free Interest Rate (r): A higher risk-free rate increases the value of call options and decreases the value of put options. This is because the cost of carrying the option (the opportunity cost) is higher, and the future payoff is discounted back at this higher rate.
+Volatility (σ): Higher volatility increases the value of both call and put options, as there is a greater chance that the underlying asset's price will move significantly, potentially leading to a higher payoff at expiration.
+
