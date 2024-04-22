@@ -11,7 +11,7 @@ def black_scholes(S, K, T, r, sigma):
 
 # Set parameters
 S = current_price  # Current stock price from your data
-K = 120.0  # Example strike price
+K = 150.0  # Example strike price
 T = (datetime(2024, 4, 26) - datetime.now()).days / 365.25  # Time to expiration calculated
 r = 0.02  # Risk-free rate
 sigma = annualized_volatility  # Annualized volatility from your data
